@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* main - prints Holberton 
+* main - prints Holberton
 *
 * Return: Always 0 (Success)
 */
@@ -11,7 +11,7 @@ char s[] = "Holberton\n";
 while (s[i])
 {
 _putchar (s[i]);
-i++; 
+i++;
 }
 return (0);
 }
