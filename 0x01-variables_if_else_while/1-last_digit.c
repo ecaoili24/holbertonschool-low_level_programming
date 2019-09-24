@@ -3,8 +3,8 @@
 #include <stdio.h>
 /**
  * main - print last digit + generate a random number
- * description
- * return - Always 0 (success)
+ * description - output depends on the condition
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
