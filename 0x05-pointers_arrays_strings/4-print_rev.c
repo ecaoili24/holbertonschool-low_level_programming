@@ -9,7 +9,7 @@ void print_rev(char *s)
 
 for (length = 0; *s != '\0'; s++)
 {
-length += 1;
+length++;
 }
 
 length -= -1;
