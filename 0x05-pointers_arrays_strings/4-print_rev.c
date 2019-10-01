@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * print_rev - print a string in reverse
  * @s: the string to print
@@ -11,8 +12,6 @@ for (length = 0; *s != '\0'; s++)
 {
 length++;
 }
-
-length -= -1;
 
 for (; length >= 0; length--, s--)
 	_putchar(*s);
