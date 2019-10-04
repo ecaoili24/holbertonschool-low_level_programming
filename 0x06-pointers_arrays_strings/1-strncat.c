@@ -22,6 +22,7 @@ char *_strncat(char *dest, char *src, int n)
 }
 
 
+
 /**
  * _strlen - length of a string
  * @s: the string to check
