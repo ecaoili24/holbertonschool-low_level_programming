@@ -26,7 +26,7 @@ char *rot13(char *s)
 	{
 	for (x = 0; x < 52; x++)
 	{
-		if (s[i] == input[i])
+		if (s[i] == input[x])
 		{
 			s[i] = rotate[x];
 			x = 52;
