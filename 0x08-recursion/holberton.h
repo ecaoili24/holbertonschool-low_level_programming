@@ -19,4 +19,6 @@ int is_prime_number(int n);
 
 int is_palindrome(char *s);
 
+int is_prime_helper(int n);
+
 #endif /* HOLBERTON_H */
