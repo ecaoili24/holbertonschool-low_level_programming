@@ -4,6 +4,7 @@
  * palindrome_checker - a helper function to recursively check if s is a
  * palindrome
  * @s: the string to check
+ * @len: the string length
  * @letter1: the first letter to check in s
  * @letter2: the next letter to check in s
  *
@@ -31,10 +32,7 @@ int is_palindrome(char *s)
 {
 	int len;
 
-	len = *s;
-
-	if (*s != '\0')
-		return (1);
+	len = _strlen_recursion(s);
 
 	return (palindrome_checker(s, len, 0, len - 1));
 }
