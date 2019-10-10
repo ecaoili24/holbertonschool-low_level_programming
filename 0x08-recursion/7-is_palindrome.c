@@ -9,7 +9,7 @@
  *
  * Return: 1 if the string is a palindrome and 0, if not
  */
-int palindrome_checker(char *s, int letter1, int letter2)
+int palindrome_checker(char *s, int len, int letter1, int letter2)
 {
 	if (letter1 == letter2)
 		return (1);
@@ -18,7 +18,7 @@ int palindrome_checker(char *s, int letter1, int letter2)
 		return (0);
 
 	if (letter1 < letter2 + 1)
-		return (palindrome_checker(s, letter1 + 1, letter2 - 1));
+		return (palindrome_checker(s, len, letter1 + 1, letter2 - 1));
 	return (1);
 }
 /**
@@ -29,14 +29,25 @@ int palindrome_checker(char *s, int letter1, int letter2)
  */
 int is_palindrome(char *s)
 {
-	int i;
-	int counter = 0;
+	int len;
 
-	for (i = 0; s[i] != '\0'; i++)
-		counter += 1;
+	len = *s;
 
-	if (counter == 0)
+	if (*s != '\0')
 		return (1);
 
-	return (palindrome_checker(s, 0, counter - 1));
+	return (palindrome_checker(s, len, 0, len - 1));
+}
+/**
+ * _strlen_recursion - gets the length of a string
+ * @s: the string
+ *
+ * Return: the length of the string
+ */
+int _strlen_recursion(char *s)
+{
+	if (*s == '\0')
+		return (0);
+
+	return (_strlen_recursion(s + 1) + 1);
 }

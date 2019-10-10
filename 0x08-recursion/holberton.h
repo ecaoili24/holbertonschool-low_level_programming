@@ -19,7 +19,7 @@ int is_prime_number(int n);
 
 int is_palindrome(char *s);
 
-int palindrome_checker(char *s, int letter1, int letter2);
+int palindrome_checker(char *s, int len, int letter1, int letter2);
 
 int is_prime_helper(int n, int i);
 
