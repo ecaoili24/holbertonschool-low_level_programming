@@ -25,9 +25,6 @@ int (*get_op_func(char *s))(int, int)
 
 	i = 0;
 
-	if (ops[i].op == NULL)
-		return (NULL);
-
 	while (ops[i].op)
 	{
 		if (ops[i].op[0] == s[0])
