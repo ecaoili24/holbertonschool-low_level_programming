@@ -16,10 +16,10 @@ int main(int argc, char *argv[])
 {
 	if (argc != 4)
 	{
-		printf("Error\n");
+		printf("Error1\n");
 		exit(98);
 	}
-	if ((get_op_func)(argv[2]) == NULL)
+	if ((get_op_func)(argv[2]) == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
@@ -30,6 +30,6 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	printf("%d\n", (*get_op_func)(argv[2])(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
