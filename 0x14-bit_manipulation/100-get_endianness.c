@@ -3,18 +3,19 @@
 
 /**
  * get_endianness - a function that checks the endianness
+ * @n: the number
  *
  * Return: 0 if big endian, 1 if little endian
  */
 int get_endianness(void)
 {
-	unsigned int i = 1;
-	char *c = (char *) &i;
+	unsigned int n = 1;
+	char *c = (char *) &n;
 
 	if (*c)
-		printf("Little Endian");
+		printf("Little endian");
 	else
-		printf("Big Endian");
+		printf("Big endian");
 	getchar();
 	return (0);
 }
