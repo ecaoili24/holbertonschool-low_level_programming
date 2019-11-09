@@ -12,24 +12,24 @@
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int j = 0;
-	unsigned long int mask = 1;
+	unsigned long int flag = 1;
 
-	if (!n)
+	if (n == NULL)
 		return (-1);
 
 	if (index > 0 && *n == 0)
 		return (1);
 
-	while (mask > 0)
+	while (flag > 0)
 	{
 		if (j == index)
 		{
-			*n = (mask ^ *n);
+			*n = (flag ^ *n);
 			return (1);
 		}
 
 		j += 1;
-		mask = mask << 1;
+		flag = flag << 1;
 	}
 	return (-1);
 }
