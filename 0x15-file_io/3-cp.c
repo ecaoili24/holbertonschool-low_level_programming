@@ -9,7 +9,7 @@ void err(char *message, char *file, int status);
  *
  * Return: Always 0 (for success) and anthing else for error
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	char buffer[1024];
 	ssize_t fd_from, fd_to;
@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 		rc = read(fd_from, buffer, 1024);
 		if (rc == -1)
 			err("Error: Can't read from file", argv[1], 98);
+
 		wc = write(fd_to, buffer, rc);
 		if (wc == -1)
 			err("Error: Can't write to", argv[2], 99);
