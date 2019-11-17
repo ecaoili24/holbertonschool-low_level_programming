@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
-void errClose(char *msg, int fd, int status);
-void err(char *msg, char *file, int status);
+void errClose(char *message, int fd, int status);
+void err(char *message, char *file, int status);
 /**
  * main - a program that copies the content of a file to another file
  * @argc: the argument count
@@ -50,25 +50,25 @@ int main(int argc, char *argv[])
 }
 
 /**
- * errClose - allows an error message to print into standard error
- * @msg: the message string
+ * err - allows an error message to print into standard error
+ * @message: the message string
  * @fd: the file string
  * @status: the int status for exit
  */
-void errClose(char *msg, int fd, int status)
+void err(char *message, char *file, int status)
 {
-	dprintf(STDERR_FILENO, "%s %d\n", msg, fd);
+	dprintf(STDERR_FILENO, "%s %s\n", message, file);
 	exit(status);
 }
 
 /**
- * err - allows an error message to print into standard error
- * @msg: the message string
+ * errClose - allows an error message to print into standard error
+ * @message: the message string
  * @file: the file string
  * @status: the int status for exit
  */
-void err(char *msg, char *file, int status)
+void errClose(char *message, int fd, int status)
 {
-	dprintf(STDERR_FILENO, "%s %s\n", msg, file);
+	dprintf(STDERR_FILENO, "%s %d\n", message, fd);
 	exit(status);
 }
