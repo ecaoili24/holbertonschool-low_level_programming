@@ -29,6 +29,6 @@ The low level curriculum focuses on the understanding of how programming languag
 | [0x17-doubly_linked_lists](https://github.com/ecaoili24/holbertonschool-low_level_programming/tree/master/0x17-doubly_linked_lists) | Data Structures: creation and use of doubly linked lists in C |
 | [0x18-dynamic_libraries](https://github.com/ecaoili24/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries) | Creation of dynamic libraries |
 
-### Authors
+### Author
 
 [Erika Caoili](erika.caoili@gmail.com)
