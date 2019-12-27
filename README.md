@@ -1,4 +1,5 @@
-![Holberton Logo](https://camo.githubusercontent.com/64c35dd60391e2c90277729276aa86cc921b0ad2/68747470733a2f2f692e6962622e636f2f546b32425a79542f776f72646d61726b2d63686572727937322e706e67)
+![Holberton Logo](https://i.ibb.co/nMtRXQR/Holberton.png)
+
 # Low Level Programming in C
 The low level curriculum focuses on the understanding of how programming languages and UNIX systems work--"what is going on under the hood." This allows the programmer or developer to optimize and debug their programs. The curriculum also, focuses on algorithms and data structures which are essential foundations for any exceptional Software Engineer.
 
