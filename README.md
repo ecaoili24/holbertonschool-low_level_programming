@@ -34,6 +34,6 @@ The low level curriculum focuses on the understanding of how programming languag
 
 Erika Caoili 
 
-Email: [erika.caoili@gmail.com](erika.caoili@gmail.com)
+[Email](erika.caoili@gmail.com)
 
-Follow me on twitter: [https://twitter.com/CaoiliErika](https://twitter.com/CaoiliErika)
+Follow me on [Twitter](https://twitter.com/CaoiliErika)
