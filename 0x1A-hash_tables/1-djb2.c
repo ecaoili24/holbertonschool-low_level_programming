@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * unsigned long int hash_djb2 - a hash function using the djb2 algo
+ * hash_djb2 - a hash function using the djb2 algo
  * @str: the pointer to the string
  *
  * Return: a hash index corresponding to the str
