@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """ Module that calculates the perimeter of an island """
 
+
 def island_perimeter(grid):
-    p = 0 # p = perimeter
+    p = 0  # p = perimeter
     for row in range(0, len(grid)):
         for zone in range(0, len(grid[row])):
             if grid[row][zone] is 1:
