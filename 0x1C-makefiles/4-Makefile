@@ -2,14 +2,13 @@ CC = gcc
 SRC = main.c holberton.c
 OBJ = $(SRC:.c=.o)
 NAME = holberton
-RM = rm
+RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
-.PHONY = clean
 all: $(OBJ)
 	$(CC) $(OBJ) $(CFLAGS) -o $(NAME)
 clean:
-	$(RM) -f .*.swp *~ $(NAME)
+	$(RM) *~ $(NAME)
 oclean:
-	$(RM) -f $(OBJ)
+	$(RM) $(OBJ)
 fclean: clean oclean
 re: oclean all
