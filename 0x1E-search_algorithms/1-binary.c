@@ -12,8 +12,8 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int top_bound = (int)size - 1;
 	int lower_bound = 0;
+	int top_bound = (int)size - 1;
 
 	if (array == NULL)
 		return (-1);
@@ -21,7 +21,7 @@ int binary_search(int *array, size_t size, int value)
 	if (size == 0)
 		return (-1);
 
-	return (find_binary_search(array, top_bound, lower_bound, value));
+	return (find_binary_search(array, lower_bound, top_bound, value));
 }
 
 /**
