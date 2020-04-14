@@ -8,4 +8,7 @@
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 
-#end if /* SEARCH_ALGOS_H */
+void printArray(int *arr, int l, int r);
+int binarySearch(int *arr, int l, int r, int x);
+
+#endif /* SEARCH_ALGOS_H */
