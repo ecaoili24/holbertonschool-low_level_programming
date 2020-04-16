@@ -44,3 +44,9 @@ A linear search runs in at worst linear time and makes at most n comparisons, wh
 | Best-case performance | O(1) |
 | Average performance | O(n) |
 | Worst-case space complexity | O(1) iterative |
+
+### Jump Search
+
+The fundamental idea behind this searching technique is to search fewer number of elements compared to linear search algorithm (which scans every element in the array to check if it matches with the element being searched or not). This can be done by skipping some fixed number of array elements or jumping ahead by fixed number of steps in every iteration.
+
+The optimal value of m is √n, where n is the length of the list L. Because both steps of the algorithm look at, at most, √n items the algorithm runs in O(√n) time. This is better than a linear search, but worse than a binary search. The advantage over the latter is that a jump search only needs to jump backwards once, while a binary can jump backwards up to log n times. This can be important if a jumping backwards takes significantly more time than jumping forward.
