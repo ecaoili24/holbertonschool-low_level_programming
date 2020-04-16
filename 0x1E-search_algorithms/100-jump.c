@@ -1,7 +1,7 @@
 #include "search_algos.h"
-int find_min(int a, int b);
+
 /**
- * linear_search - a function that searches for a value in an array of integers
+ * jump_search - a function that searches for a value in an array of integers
  * using the Linear search algorithm
  * @array: the array to be searched
  * @size: the length of the array
@@ -11,44 +11,36 @@ int find_min(int a, int b);
  */
 int jump_search(int *array, size_t size, int value)
 {
-	int step = (int)floor(sqrt(size));
 	int prev = 0;
+	int x;
+	int step = (int)floor(sqrt(size));
 
-	if (!array || size == 0)
+	if (array == NULL || size == 0)
 		return (-1);
 
-	while (array[find_min(step, size) - 1] < value)
+	printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
+	while (array[step] <= value && step < (int)size)
 	{
 		prev = step;
 		step += (int)floor(sqrt(size));
-		if (prev >= (int)size)
-			return -1;
+		if (array[prev] < value)
+			printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
+		if (step > (int)size - 1)
+			break;
 	}
-	while (array[prev] < value)
+	if (array[prev] >= value)
 	{
-		prev++;
-		printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
-		if (prev == find_min(step, size))
-			return (-1);
+		printf("Value found between indexes [%d] and [%d]\n", prev - (int)floor
+		       (sqrt(size)), prev);
+		prev -= (int)floor(sqrt(size));
 	}
-	if (array[prev] == value)
-		printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
-		return (prev);
-
-	return (-1);
-}
-
-/**
- * find_min - a function that searches for the minimum value
- * @a: an integer
- * @b: an integer
- *
- * Return: returns the min value found, if not found, return -1
- */
-int find_min(int a, int b)
-{
-	if (a >= b)
-		return (a);
 	else
-		return (b);
+		printf("Value found between indexes [%d] and [%d]\n", prev, step);
+	for (x = prev; x < step && x < (int)size - 1; x++, prev++)
+	{
+		printf("Value checked array[%d] = [%d]\n", x, array[x]);
+		if (array[x] == value)
+			return (x);
+	}
+	return (-1);
 }
