@@ -29,6 +29,10 @@ The low level curriculum focuses on the understanding of how programming languag
 | [0x15-file_io](https://github.com/ecaoili24/holbertonschool-low_level_programming/tree/master/0x15-file_io) | Input-Output System Calls in C: Open/Read/Write |
 | [0x17-doubly_linked_lists](https://github.com/ecaoili24/holbertonschool-low_level_programming/tree/master/0x17-doubly_linked_lists) | Data Structures: creation and use of doubly linked lists in C |
 | [0x18-dynamic_libraries](https://github.com/ecaoili24/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries) | Creation of your own dynamic library |
+| [0x18-dynamic_libraries](https://github.com/ecaoili24/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries) | Creating Dynamic Libraries |
+| [0x1A-hash_tables](https://github.com/ecaoili24/holbertonschool-low_level_programming/tree/master/0x1A-hash_tables) | Hash Function Algorithm |
+| [0x1C-makefiles](https://github.com/ecaoili24/holbertonschool-low_level_programming/tree/master/0x1C-makefiles) | Creating and Makefile manipulation |
+| [0x1E-search_algorithms](https://github.com/ecaoili24/holbertonschool-low_level_programming/tree/master/0x1E-search_algorithms) | Searching Algorithms |
 
 ### Author
 
